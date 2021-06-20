@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: chocolate;
+    padding: 10px;
+}
+.background {
+    background-image: url(../../images/background.png);
+}
+.nomJoueur {
+    font-size: 3em;
+}
+button {
+    margin: 10px 0;
+}
+.btn-primary {
+    color: #fff;
+    background-color: chocolate;
+    border-color: chocolate; 
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgba(210, 105, 30, 0.836);
+    border-color: rgba(210, 105, 30, 0.836); 
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(210, 105, 30, 0.20); 
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(210, 105, 30, 0.20); 
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: chocolate;
+    border-color: chocolate;
+}
+#global-score-joueur-1,
+#global-score-joueur-2 {
+    font-size: 5em;
+}
+.scoreRound {
+    background-color: chocolate;
+    width: 50%;
+}
+.scoreRound p:first-of-type{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.scoreRound p:last-of-type {
+    font-size: 3em;
+    margin: 0;
+}
