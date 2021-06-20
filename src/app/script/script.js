@@ -63,3 +63,29 @@ function winGame() {
 }
 
 
+function diceRoll() {
+    if(activeGame) {
+        diceScore = Math.trunc(Math.random() * 6 + 1);
+        roundScore[activePlayer] = parseInt(document.getElementById('round-score-joueur-' + numberPlayer[activePlayer]).textContent, 10);
+        if(diceScore != 1) {
+            document.getElementById('resultatLance').src = '../images/' + diceScore + '.png';
+            roundScore[activePlayer] += diceScore;
+            document.getElementById('round-score-joueur-' + numberPlayer[activePlayer]).textContent = roundScore[activePlayer];
+        } else {
+            document.getElementById('resultatLance').src = '../images/' + diceScore + '.png';
+            document.getElementById('round-score-joueur-' + numberPlayer[activePlayer]).textContent = roundScore[activePlayer];
+            changePlayer();
+            alert('Joueur suivant')
+        }
+    }
+}
+
+function saveScore() {
+    if (activeGame && roundScore[activePlayer] != 0) {
+        globalScore[activePlayer] += roundScore[activePlayer];
+        document.getElementById('global-score-joueur-' + numberPlayer[activePlayer]).textContent = globalScore[activePlayer];
+        winGame()
+    }
+}
+
+
