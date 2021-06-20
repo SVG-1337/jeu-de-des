@@ -9,7 +9,9 @@ html, body {
 }
 .background {
     background-image: url(../../images/background.png);
+    background-size: cover;
 }
+
 #joueur1Actif,
 #joueur2Actif {
     width: 20px;
@@ -22,6 +24,8 @@ html, body {
 }
 button {
     margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 .btn-primary {
     color: #fff;
