@@ -10,6 +10,13 @@ html, body {
 .background {
     background-image: url(../../images/background.png);
 }
+#joueur1Actif,
+#joueur2Actif {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
 .nomJoueur {
     font-size: 3em;
 }

@@ -13,7 +13,7 @@
     <div class="container-xl background h-100 d-flex flex-column justify-content-around">
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center">
-                <button id="nouvellePartie" class="nouvellePartie btn btn-primary">
+                <button onclick="newGame()" id="nouvellePartie" class="nouvellePartie btn btn-primary">
                     <img src="#" alt="">
                     Nouvelle partie
                 </button>
@@ -25,7 +25,7 @@
                 <p id="global-score-joueur-1">0</p>
             </div>
             <div class="col d-flex align-items-center justify-content-center flex-column">
-                <img src="../images/1.png">
+                <img id="resultatLance" src="../images/1.png">
             </div>
             <div class="col d-flex align-items-center justify-content-center flex-column">
                 <p class="nomJoueur">Player 2 <span id="joueur2Actif"></span> </p>
